@@ -1,5 +1,26 @@
 # Wake On Lan (WOL)
 
+# Prerequisite
+
+Enable **Wake On LAN** in BIOS.
+
+On windows,
+
+1. **Device Manager**
+2. **Network adapeters**
+3. Double Click your default adapter, most likely "Intel..." or "Realtek ..."
+4. **Power Management**
+5. **Allow this device to wake the computer**
+   **Only allow a magic packet to wake the computer**
+
+## Wireshark
+
+Use wireshark to monitor wol packet to your network and computers, to verify that the wol packets are actually sent and received properly.
+
+Open wireshark with `sudo` on linux, select your network adapter, in filter box at top, type in **wol** and click enter. Then only **wol** traffic will be shown.
+
+After you send a **wol** packet with the following methods, you should see it in wireshark
+
 ## wakeonlan
 
 Use a command line app
@@ -31,7 +52,7 @@ See also
     wakeonlan(1)
 ```
 
-## wol.py
+## Python WOL Script
 
 ```python
 import socket
@@ -65,8 +86,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
 
 ```
 
-
-
 ## Remote WOL
 
 ### Method 1 (third party website)
@@ -98,8 +117,3 @@ Use **IFTTT**, make an applet.
 **IF CONDITION:** receive voice command from **Google Assistant** or **Alexa** or **Siri**
 
 **THEN:** Use **webhook** applet in IFTTT to send a get request. The GET request can be sent with **Method 1** or **Method 3**.
-
-
-
-
-
