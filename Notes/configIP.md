@@ -8,6 +8,8 @@ Command Line Way:
 
 `curl -s 'https://api.ipify.org?format=json' | cut -d '"' -f 4`
 
+`curl ifconfig.me`
+
 ## Find Private IP
 
 `ifconfig` for linux and mac, `ipconfig` for windows.
