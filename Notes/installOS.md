@@ -40,7 +40,7 @@ The first step to do when you get a Raspberry Pi is to get a Operating System fo
 
     Connect the raspberry pi to power, it should boot automatically
 
-    If you have only 1 raspberry pi on your network, it should have a hostname of raspberry and we can `ssh pi@raspberry.local` to connect to it through ssh.
+    If you have only 1 raspberry pi on your network, it should have a hostname of raspberry and we can `ssh pi@raspberrypi.local` to connect to it through ssh, the default password is `pi`
 
     If this is not the first pi in your network and the hostname of the other one is not changed, it's harder to find the local ip address of the new raspberry pi.
 
