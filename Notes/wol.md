@@ -60,7 +60,6 @@ import time
 
 # ip = "255.255.255.255"
 # ip = "192.168.1.255"
-# ip = "38.26.25.249"
 ip = "192.168.1.xxx"
 mac = "xx:xx:xx:xx:xx:xx"
 port = 9
